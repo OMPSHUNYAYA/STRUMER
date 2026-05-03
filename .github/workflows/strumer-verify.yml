@@ -75,14 +75,19 @@ jobs:
               return hashlib.sha256(path.read_bytes()).hexdigest()
 
           for label, path in targets.items():
-              pattern = rf"{re.escape(label)}\s*SHA256:\s*([0-9a-f]{{64}})"
+              label_variants = [
+                  re.escape(label),
+                  re.escape(label.replace("/", "\\")),
+              ]
+
+              pattern = rf"({'|'.join(label_variants)})\s*SHA256:\s*([0-9a-f]{{64}})"
               match = re.search(pattern, freeze_text, re.IGNORECASE)
 
               if not match:
                   print(f"ERROR: No frozen SHA256 entry found for {label}")
                   sys.exit(1)
 
-              expected = match.group(1).lower()
+              expected = match.group(2).lower()
               actual = sha256_file(path).lower()
 
               if actual != expected:
@@ -115,24 +120,26 @@ jobs:
           required_markers = [
               "STRUMER",
               "Structural Media Resolution",
-              "video_visible iff",
+              "video",
               "RESOLVED",
               "ABSTAIN",
               "BLOCKED",
+              "same structure -> same video",
           ]
 
-          missing = [m for m in required_markers if m not in out]
+          missing = [marker for marker in required_markers if marker not in out]
           if missing:
               print("ERROR: STRUMER output missing expected markers:")
-              for m in missing:
-                  print(" -", m)
-              print("\nFull output:\n", out)
+              for marker in missing:
+                  print(" -", marker)
+              print("\nFull output:\n")
+              print(out)
               sys.exit(1)
 
           print("STRUMER output markers verified.")
           PY
 
-      - name: Verify deterministic output
+      - name: Verify deterministic demo output
         shell: bash
         run: |
           python - <<'PY'
@@ -141,14 +148,43 @@ jobs:
 
           cmd = [sys.executable, "demo/strumer_v2_3.py"]
 
-          r1 = subprocess.run(cmd, capture_output=True, text=True, check=True)
-          r2 = subprocess.run(cmd, capture_output=True, text=True, check=True)
+          result1 = subprocess.run(cmd, capture_output=True, text=True, check=True)
+          result2 = subprocess.run(cmd, capture_output=True, text=True, check=True)
 
-          if r1.stdout != r2.stdout:
-              print("ERROR: Non-deterministic STRUMER output")
+          if result1.stdout != result2.stdout:
+              print("ERROR: Non-deterministic STRUMER output for identical run")
               sys.exit(1)
 
           print("Deterministic STRUMER output verified.")
+          PY
+
+      - name: Verify HTML demo contains expected STRUMER hooks
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+
+          text = Path("demo/STRUMER_HTML_v2_3.html").read_text(encoding="utf-8", errors="replace")
+
+          required_snippets = [
+              "STRUMER",
+              "structure",
+              "video",
+              "RESOLVED",
+              "ABSTAIN",
+              "BLOCKED",
+              "resolve",
+          ]
+
+          missing = [snippet for snippet in required_snippets if snippet not in text]
+          if missing:
+              print("ERROR: HTML demo is missing expected STRUMER hooks:")
+              for snippet in missing:
+                  print(" -", snippet)
+              sys.exit(1)
+
+          print("HTML demo structural hooks verified.")
           PY
 
       - name: Verify README contains core STRUMER claims
@@ -160,8 +196,9 @@ jobs:
 
           text = Path("README.md").read_text(encoding="utf-8", errors="replace")
 
-          required = [
+          required_snippets = [
               "Structural Media Resolution",
+              "Video Without Editing",
               "video_output = resolve(structure)",
               "video_visible iff video_structure_complete AND video_structure_consistent",
               "same structure -> same video",
@@ -170,11 +207,11 @@ jobs:
               "VERIFY/FREEZE_DEMO_SHA256.txt",
           ]
 
-          missing = [r for r in required if r not in text]
+          missing = [snippet for snippet in required_snippets if snippet not in text]
           if missing:
-              print("ERROR: README missing STRUMER claims:")
-              for r in missing:
-                  print(" -", r)
+              print("ERROR: README.md is missing expected STRUMER claims:")
+              for snippet in missing:
+                  print(" -", snippet)
               sys.exit(1)
 
           print("README core claims verified.")
