@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STRUMER HTML v2.3 — Structural Media Resolution</title>
+  <style>
+    :root{
+      --bg:#07111f;
+      --bg2:#0b1729;
+      --card:rgba(255,255,255,.075);
+      --card2:rgba(255,255,255,.11);
+      --line:rgba(255,255,255,.14);
+      --text:#edf4ff;
+      --muted:#b7c6e4;
+      --gold:#ffc857;
+      --mint:#69f0c8;
+      --blue:#78a8ff;
+      --red:#ff6b7a;
+      --yellow:#ffd166;
+      --green:#7cffb2;
+      --shadow:0 24px 70px rgba(0,0,0,.36);
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      color:var(--text);
+      font-family:Inter,Segoe UI,Arial,sans-serif;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(120,168,255,.26), transparent 28%),
+        radial-gradient(circle at 92% 8%, rgba(105,240,200,.18), transparent 26%),
+        radial-gradient(circle at 50% 100%, rgba(255,200,87,.12), transparent 22%),
+        linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);
+      min-height:100vh;
+    }
+
+    .wrap{
+      max-width:1180px;
+      margin:0 auto;
+      padding:28px 18px 46px;
+    }
+
+    .hero{
+      border:1px solid var(--line);
+      border-radius:30px;
+      padding:30px;
+      background:
+        linear-gradient(135deg,rgba(120,168,255,.23),rgba(105,240,200,.10),rgba(255,200,87,.10)),
+        linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.04));
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+
+    .badge{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:9px 13px;
+      color:var(--gold);
+      background:rgba(255,255,255,.07);
+      font-size:.82rem;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+    }
+
+    h1{
+      margin:18px 0 10px;
+      font-size:clamp(2rem,4vw,4rem);
+      line-height:1;
+      letter-spacing:-.045em;
+    }
+
+    .subtitle{
+      color:var(--muted);
+      max-width:900px;
+      font-size:1.05rem;
+      line-height:1.6;
+      margin:0;
+    }
+
+    .signature{
+      display:inline-block;
+      margin-top:18px;
+      font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+      color:#e8f7ff;
+      background:rgba(0,0,0,.30);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:15px;
+      padding:13px 16px;
+      font-weight:800;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:18px;
+      margin-top:18px;
+    }
+
+    .card{
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:22px;
+      background:linear-gradient(180deg,rgba(255,255,255,.085),rgba(255,255,255,.045));
+      box-shadow:var(--shadow);
+    }
+
+    .card h2{
+      margin:0 0 10px;
+      font-size:1.45rem;
+      letter-spacing:-.02em;
+    }
+
+    .lead{
+      color:var(--muted);
+      line-height:1.62;
+      margin:0 0 14px;
+    }
+
+    .pillrow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .pill{
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.06);
+      border-radius:999px;
+      padding:9px 12px;
+      color:#dce9ff;
+      font-weight:750;
+      font-size:.88rem;
+    }
+
+    .flow{
+      display:grid;
+      gap:12px;
+      margin-top:14px;
+    }
+
+    .node{
+      border:1px solid rgba(105,240,200,.35);
+      background:rgba(105,240,200,.07);
+      border-radius:18px;
+      padding:14px;
+      text-align:center;
+      font-weight:850;
+    }
+
+    .arrow{
+      text-align:center;
+      color:var(--gold);
+      font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+      font-weight:900;
+    }
+
+    .panel{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:14px;
+      margin-top:18px;
+    }
+
+    .state{
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:18px;
+      background:rgba(255,255,255,.06);
+      min-height:150px;
+    }
+
+    .state strong{
+      display:block;
+      margin-bottom:8px;
+      font-size:1.08rem;
+    }
+
+    .state p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.5;
+      font-size:.94rem;
+    }
+
+    .resolved strong{color:var(--green)}
+    .abstain strong{color:var(--yellow)}
+    .blocked strong{color:var(--red)}
+
+    .demo{
+      margin-top:18px;
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:24px;
+      background:linear-gradient(135deg,rgba(255,200,87,.10),rgba(120,168,255,.12),rgba(105,240,200,.08));
+      box-shadow:var(--shadow);
+    }
+
+    .controls{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:14px 0;
+    }
+
+    button{
+      cursor:pointer;
+      border:1px solid var(--line);
+      color:var(--text);
+      background:rgba(255,255,255,.08);
+      border-radius:999px;
+      padding:12px 16px;
+      font-weight:850;
+      transition:.2s ease;
+    }
+
+    button:hover{
+      transform:translateY(-2px);
+      background:rgba(255,255,255,.13);
+    }
+
+    button.primary{
+      background:linear-gradient(135deg,var(--blue),var(--mint));
+      color:#06111f;
+      border:none;
+    }
+
+    .output{
+      margin-top:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(0,0,0,.28);
+      border-radius:18px;
+      padding:16px;
+      font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+      line-height:1.65;
+      white-space:pre-wrap;
+      color:#dceaff;
+    }
+
+    .mini-video{
+      margin-top:16px;
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:22px;
+      overflow:hidden;
+      background:#050a12;
+      min-height:260px;
+      display:grid;
+      place-items:center;
+      position:relative;
+    }
+
+    .slide{
+      width:min(720px,92%);
+      min-height:220px;
+      border:1px solid rgba(105,240,200,.32);
+      border-radius:24px;
+      background:
+        radial-gradient(circle at 50% 0%,rgba(255,200,87,.12),transparent 35%),
+        linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));
+      padding:24px;
+      display:grid;
+      align-content:center;
+      text-align:center;
+      box-shadow:0 22px 60px rgba(0,0,0,.35);
+    }
+
+    .slide-title{
+      color:var(--gold);
+      font-size:clamp(1.55rem,3vw,2.4rem);
+      font-weight:900;
+      letter-spacing:-.03em;
+      margin-bottom:12px;
+    }
+
+    .slide-body{
+      color:#eff6ff;
+      font-size:clamp(1rem,2vw,1.35rem);
+      line-height:1.45;
+      font-weight:700;
+    }
+
+    .section{
+      margin-top:18px;
+    }
+
+    .twocol{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+      margin-top:14px;
+    }
+
+    .list{
+      margin:10px 0 0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      gap:9px;
+    }
+
+    .list li{
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:14px;
+      padding:10px 12px;
+      background:rgba(255,255,255,.045);
+      color:#dce8ff;
+      line-height:1.45;
+    }
+
+    .mono{
+      font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+      color:#e9f6ff;
+      background:rgba(0,0,0,.25);
+      border:1px solid rgba(255,255,255,.09);
+      border-radius:14px;
+      padding:12px;
+      overflow:auto;
+      line-height:1.6;
+    }
+
+    .footer{
+      text-align:center;
+      color:var(--muted);
+      line-height:1.65;
+      margin-top:28px;
+      padding:18px;
+    }
+
+    @media (max-width:860px){
+      .grid,.panel,.twocol{grid-template-columns:1fr}
+      .hero,.card,.demo{padding:20px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="badge">STRUMER HTML v2.3</div>
+      <h1>Structural Media Resolution</h1>
+      <p class="subtitle">A browser-facing demonstration of the STRUMER principle: video output can be defined by complete and consistent structure, without editing tools, timelines, or manual composition as the source of output.</p>
+      <div class="signature">video_visible iff video_structure_complete AND video_structure_consistent</div>
+      <div class="pillrow">
+        <span class="pill">Video Without Editing</span>
+        <span class="pill">Deterministic</span>
+        <span class="pill">Structure-Based</span>
+        <span class="pill">Resolution-Driven</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Core Claim</h2>
+        <p class="lead">STRUMER separates video output from editing workflow. Editing tools may exist as capability layers, but the visible media output is determined by structure.</p>
+        <div class="mono">video_output = resolve(structure)
+
+same structure -> same video output
+incomplete structure -> ABSTAIN
+conflicting structure -> BLOCKED</div>
+      </div>
+
+      <div class="card">
+        <h2>Structure Reveals Output</h2>
+        <div class="flow">
+          <div class="node">Structural Definition</div>
+          <div class="arrow">-></div>
+          <div class="node">Complete AND Consistent</div>
+          <div class="arrow">-></div>
+          <div class="node">Visible Video Output</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="state resolved">
+        <strong>RESOLVED</strong>
+        <p>The structure is complete and consistent. Video output becomes visible.</p>
+      </div>
+      <div class="state abstain">
+        <strong>ABSTAIN</strong>
+        <p>The structure is incomplete. No video output is forced.</p>
+      </div>
+      <div class="state blocked">
+        <strong>BLOCKED</strong>
+        <p>The structure is conflicting. No arbitrary output is allowed.</p>
+      </div>
+    </section>
+
+    <section class="demo">
+      <h2>Interactive Structural Demonstration</h2>
+      <p class="lead">Select a structural condition. The HTML demo does not replace the Python reference script. It explains the STRUMER resolution model visually.</p>
+
+      <div class="controls">
+        <button class="primary" onclick="setState('resolved')">Complete Structure</button>
+        <button onclick="setState('abstain')">Incomplete Structure</button>
+        <button onclick="setState('blocked')">Conflicting Structure</button>
+        <button onclick="setState('modified')">Modify Structure</button>
+      </div>
+
+      <div class="output" id="output"></div>
+
+      <div class="mini-video" id="visual"></div>
+    </section>
+
+    <section class="grid section">
+      <div class="card">
+        <h2>Python and HTML Roles</h2>
+        <ul class="list">
+          <li>Python proves the structure: <span class="mono">python demo/strumer_v2_3.py</span></li>
+          <li>HTML explains the structure: <span class="mono">demo/STRUMER_HTML_v2_3.html</span></li>
+          <li>YouTube shows the output: final STRUMER generated video</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Capability vs Output</h2>
+        <ul class="list">
+          <li>Tools may render frames.</li>
+          <li>Tools may encode video.</li>
+          <li>Tools may display output.</li>
+          <li>Structure determines the video.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card section">
+      <h2>Dependency Elimination</h2>
+      <div class="twocol">
+        <div>
+          <p class="lead">Traditional media systems often assume:</p>
+          <ul class="list">
+            <li>video requires editing</li>
+            <li>timeline defines output</li>
+            <li>manual adjustment creates layout</li>
+            <li>preview-fix cycles are necessary</li>
+          </ul>
+        </div>
+        <div>
+          <p class="lead">STRUMER demonstrates:</p>
+          <ul class="list">
+            <li>video output is structural</li>
+            <li>layout can be defined</li>
+            <li>timing can be resolved</li>
+            <li>same structure produces same output</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card section">
+      <h2>Final Statement</h2>
+      <p class="lead">Editing did not create the video. Tools did not create the video. Workflows did not create the video. Video was always determined by structure.</p>
+      <div class="mono">remove dependency -> preserve structure -> output remains</div>
+    </section>
+
+    <div class="footer">
+        <strong>STRUMER — Structural Media Resolution</strong><br />
+         Reference HTML Demo v2.3<br />
+         Part of the Shunyaya Dependency Elimination Framework<br />
+        <span style="font-size:0.84rem; color:#d8c27a; font-weight:600;">Illustrative Demo Only</span>
+    </div>
+
+  <script>
+    const slides = {
+      resolved: {
+        state: "RESOLVED",
+        title: "Complete Structure",
+        body: "Video output becomes visible.",
+        note: "video_structure_complete = TRUE\nvideo_structure_consistent = TRUE\n\nresolve(structure) -> RESOLVED\nsame structure -> same video output"
+      },
+      abstain: {
+        state: "ABSTAIN",
+        title: "Incomplete Structure",
+        body: "No output is forced.",
+        note: "video_structure_complete = FALSE\nvideo_structure_consistent = TRUE\n\nresolve(structure) -> ABSTAIN\nincomplete structure -> no video"
+      },
+      blocked: {
+        state: "BLOCKED",
+        title: "Conflicting Structure",
+        body: "No arbitrary output is allowed.",
+        note: "video_structure_complete = TRUE\nvideo_structure_consistent = FALSE\n\nresolve(structure) -> BLOCKED\nconflicting structure -> no video"
+      },
+      modified: {
+        state: "RESOLVED",
+        title: "Modified Structure",
+        body: "A changed structure creates a new deterministic output.",
+        note: "structure_A != structure_B\n\nOutput_A may differ from Output_B\nstructure change -> predictable output change"
+      }
+    };
+
+    function signature(text){
+      let h = 2166136261;
+      for(let i=0;i<text.length;i++){
+        h ^= text.charCodeAt(i);
+        h = Math.imul(h,16777619);
+      }
+      return ("00000000" + (h >>> 0).toString(16)).slice(-8);
+    }
+
+    function setState(key){
+      const s = slides[key];
+      const sig = signature(s.state + "|" + s.title + "|" + s.body);
+      document.getElementById("output").textContent =
+        "STRUMER HTML v2.3\n" +
+        "Resolution state: " + s.state + "\n" +
+        "Output signature: " + sig + "\n\n" +
+        s.note;
+
+      const visual = document.getElementById("visual");
+
+      if(key === "abstain"){
+        visual.innerHTML = '<div class="slide"><div class="slide-title">ABSTAIN</div><div class="slide-body">Structure incomplete.<br>No video output is forced.</div></div>';
+      } else if(key === "blocked"){
+        visual.innerHTML = '<div class="slide"><div class="slide-title">BLOCKED</div><div class="slide-body">Structure conflicting.<br>No arbitrary output is allowed.</div></div>';
+      } else {
+        visual.innerHTML = '<div class="slide"><div class="slide-title">' + s.title + '</div><div class="slide-body">' + s.body + '</div></div>';
+      }
+    }
+
+    setState("resolved");
+  </script>
+</body>
+</html>
