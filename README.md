@@ -10,6 +10,8 @@
 
 ![STRUMER Verify](https://github.com/OMPSHUNYAYA/STRUMER/actions/workflows/strumer-verify.yml/badge.svg)
 
+---
+
 **Reveals complete video output from structure — without editing.**
 
 This reference engine demonstrates a strict invariant:
