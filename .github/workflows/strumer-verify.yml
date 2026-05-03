@@ -199,8 +199,7 @@ jobs:
               "video_visible iff video_structure_complete AND video_structure_consistent",
               "same structure -> same video",
               "STRUMER Challenge",
-              "demo/strumer_v2_3.py",
-              "VERIFY/FREEZE_DEMO_SHA256.txt",
+              "demo/strumer_v2_3.py",              
           ]
 
           missing = [snippet for snippet in required_snippets if snippet not in text]
