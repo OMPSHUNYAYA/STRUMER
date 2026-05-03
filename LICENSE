@@ -1,0 +1,276 @@
+Open Standard License — STRUMER Reference Implementation
+
+STRUMER — Structural Media Resolution (Video Without Editing)
+Shunyaya Structural Media Model
+
+Legal Status
+
+This license is a permissive Open Standard license for the STRUMER reference implementation.
+
+To the maximum extent permitted by applicable law, this license grants rights similar in spirit to permissive open-source licenses, while preserving truthful representation requirements for the STRUMER name and reference implementation.
+
+If any provision is found unenforceable, the remaining provisions remain in effect.
+
+Nature of Release
+
+This is a minimal, self-contained reference implementation.
+
+It is intended to demonstrate a structural media resolution model — not to represent a full media production system, video editing platform, or rendering pipeline.
+
+Behavioral guarantees apply only within the scope of the reference model and its defined structural assumptions.
+
+Permission
+
+Permission is hereby granted, free of charge, to any person or organization to:
+
+• use
+• execute
+• study
+• reproduce
+• publish
+• distribute
+• modify
+• implement
+• extend
+
+the STRUMER reference implementation, in whole or in part, for commercial or non-commercial use, subject only to the representation and naming conditions defined in this license.
+
+No registration, fees, or approval are required.
+
+No Additional Restrictions
+
+This reference implementation imposes no additional restrictions on usage, except:
+
+• truthful representation
+• non-misleading use of the STRUMER name
+
+Attribution is not required, but is encouraged for clarity and ecosystem integrity.
+No endorsement or certification is implied.
+No runtime obligations apply.
+
+Separation of License and Structural Output
+
+This license governs legal usage, distribution, and representation.
+
+It does not govern, alter, or override structural output.
+
+Video output is defined independently by:
+
+video_output = resolve(structure)
+
+Legal permission does not imply structural validity.
+Structural validity does not depend on legal permission.
+
+Practical Interpretation
+
+This license governs usage and representation.
+It does not govern output.
+
+Output within this model is determined solely by structure:
+
+video_structure_complete = TRUE AND video_structure_consistent = TRUE
+
+Licensing governs usage — not output.
+
+Video output is a property of structure — independent of editing tools, timelines, or rendering mechanisms.
+
+Structural proof is expressed as:
+
+same structure -> same video output
+
+Different structure leads to different admissibility outcomes or no output.
+
+Clarification — Tools as Capability
+
+The reference implementation may use tools for:
+
+• rendering
+• encoding
+• display
+
+However, such tools are not the source of output.
+
+Output is determined solely by structural sufficiency.
+
+Key distinction:
+
+Traditional systems: video = result of editing
+STRUMER: video = result of resolved structure
+
+Tools may reveal output.
+They do not define it.
+
+Representation & Naming
+
+Modified or extended implementations:
+
+• must not be presented as the canonical STRUMER reference implementation unless structural behavior is preserved
+• must not imply official authorship, certification, or endorsement
+
+Use of the name “STRUMER” must not imply:
+
+• endorsement
+• certification
+• governance authority
+• official status
+
+Recommended Attribution (Optional)
+
+Preferred form:
+
+Implements STRUMER — Structural Media Resolution (Shunyaya Structural Model)
+
+Attribution must not imply endorsement.
+
+Scope of the Reference Implementation
+
+This release includes:
+
+• structural media definitions
+• output visibility rules
+• minimal executable reference (video generation script)
+• output demonstration
+
+STRUMER defines a deterministic structural model where video output emerges from structure:
+
+resolve(structure) ->
+RESOLVED if structure is complete AND consistent
+ABSTAIN  if structure is incomplete
+BLOCKED  if structure is inconsistent
+
+What This Demonstrates
+
+• video generation without editing dependency
+• independence from timeline workflows
+• independence from manual adjustment
+• independence from tools as a requirement for output
+• structural resolution governing output visibility
+• safe handling of incomplete and conflicting structure
+• deterministic and reproducible media output
+• identical structure produces identical video output
+
+Conformance
+
+An implementation may be considered compatible if it preserves:
+
+• structure-based output
+• independence from editing as a requirement for output
+• deterministic resolution
+• structure-driven output visibility
+• reproducibility under equivalent inputs
+• explicit handling of incomplete and conflicting structure
+
+Conformance is judged solely by observable behavior — not by internal implementation.
+
+Conflict Handling
+
+In this reference implementation:
+
+• BLOCKED is explicitly defined and demonstrated
+• ABSTAIN corresponds to incomplete structure (no output)
+• inconsistent conditions do not produce visible output
+
+Conforming behavior ensures:
+
+• no forced output under incomplete structure
+• no arbitrary output under conflicting structure
+
+Dependency Independence Guarantee
+
+Output is invariant under tool or environment state:
+
+resolve(S, D1) = resolve(S, D2)
+
+for all dependency states.
+
+This ensures:
+
+dependency_failure != output_failure
+
+Output depends only on structure — not tool state.
+
+Relationship to Shunyaya Framework
+
+STRUMER is part of the broader Shunyaya framework.
+
+It builds on:
+
+• SLANG -> correctness without execution
+• ORL -> correctness without ordering
+• STIME -> correctness without time
+• STINT -> correctness without connectivity
+• STILE -> correctness without communication
+• SVARE -> correctness without computation
+• STRUMER -> output without editing
+
+Each removes a dependency.
+Output remains preserved by structure.
+
+Architecture License
+
+The conceptual architecture and documentation are licensed under:
+
+Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)
+
+Permitted:
+
+• research
+• academic use
+• study and reproduction
+• non-commercial distribution
+
+Commercial use of architecture text is not permitted under this license.
+
+Full license:
+https://creativecommons.org/licenses/by-nc/4.0/
+
+Responsibility
+
+Use of STRUMER in real-world systems is entirely at the user’s own responsibility.
+
+This reference implementation provides:
+
+• deterministic structural output
+• output derived from structure
+• safe handling of incomplete and conflicting structure
+
+It does not provide:
+
+• production media guarantees
+• rendering guarantees
+• performance guarantees
+• real-time guarantees
+• safety-critical assurances
+• regulatory or compliance guarantees
+
+No Warranty
+
+THE STRUMER REFERENCE IMPLEMENTATION IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND.
+
+THIS INCLUDES, BUT IS NOT LIMITED TO:
+
+• MERCHANTABILITY
+• FITNESS FOR A PARTICULAR PURPOSE
+• NON-INFRINGEMENT
+
+IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM USE OF THIS IMPLEMENTATION.
+
+Closing Statement
+
+STRUMER explores a simple but fundamental idea:
+
+Video output emerges deterministically from structure.
+It does not require editing tools, timelines, or manual workflows as a prerequisite.
+
+Tools may enable media creation.
+They do not determine the video.
+
+This reference implementation is released to encourage:
+
+• independent validation
+• real-world testing
+• safe experimentation
+
+STRUMER is offered as a minimal, verifiable reference implementation of that possibility.
+
+This is STRUMER.
