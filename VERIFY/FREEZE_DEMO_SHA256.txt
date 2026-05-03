@@ -1,0 +1,10 @@
+STRUMER - Hash Freeze (SHA256)
+
+demo\strumer_v2_3.py
+SHA256: cb03fe9bc4775c780714bd7a2105ef9b53cfc7a0d6fbce08132db2cbe05efa4d
+
+demo\STRUMER_HTML_v2_3.html
+SHA256: c11a4c4e230e87ca674e4ba2deb453b7be64fe98f9709e09be3a2126abcb104f
+
+same file -> same hash
+different file -> different hash
