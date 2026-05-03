@@ -8,6 +8,8 @@
 
 ![Dependency-Invariant](https://img.shields.io/badge/Dependency-Invariant-lightgrey) ![Python](https://img.shields.io/badge/Python-3.9%2B-blue) ![Reference-Engine](https://img.shields.io/badge/Engine-Reference%20v1.0-blue) ![Open-Standard](https://img.shields.io/badge/Reference-Open%20Standard-blue)
 
+![STRUMER Verify](https://github.com/OMPSHUNYAYA/STRUMER/actions/workflows/strumer-verify.yml/badge.svg)
+
 **Reveals complete video output from structure — without editing.**
 
 This reference engine demonstrates a strict invariant:
