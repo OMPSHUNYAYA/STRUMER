@@ -408,10 +408,6 @@ Full verification checklist and expected states are available in:
 
 `VERIFY/VERIFY.txt`
 
-### **Verification Files**
-
-VERIFY/FREEZE_DEMO_SHA256.txt
-
 ### **Core Guarantee**
 
 `same structure -> same video -> same output signature`
