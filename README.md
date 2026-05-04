@@ -218,6 +218,21 @@ Use STRUMER to define the video.
 
 ---
 
+## 🧩 **STRUMER-D — Diagrams Without Drawing**
+
+**Structural Diagram Resolution**
+
+STRUMER-D extends STRUMER from video → diagrams.
+
+No drawing tools. No layout tuning.  
+Diagrams become visible when structure resolves.
+
+`diagram_visible iff diagram_structure_complete AND diagram_structure_consistent`
+
+→ [Open STRUMER-D](STRUMER-D/)
+
+---
+
 ## 🧱 **Layer Separation (Critical)**
 
 **Structure Layer:**  
@@ -370,9 +385,14 @@ it reveals that output was always determined by structure.
 
 ## 🧪 **Demo**
 
+### 🎬 STRUMER (Video Without Editing)
 - [Python Reference](demo/strumer_v2_3.py)  
 - [HTML Visual Demo](demo/STRUMER_HTML_v2_3.html)  
 - [Video Demo Script (v2.7)](demo_extension/STRUMER_video_v2_7.py)
+
+### 🧩 STRUMER-D (Diagrams Without Drawing)
+- [STRUMER-D Script (v2.0)](STRUMER-D/strumer_d_v2_0.py)  
+- [STRUMER-D Outputs](STRUMER-D/)
 
 ---
 
