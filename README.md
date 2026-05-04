@@ -27,6 +27,9 @@ It depends only on structure.
 🚧 **This repository contains the canonical Phase I reference implementation.**  
 🎬 The official STRUMER demonstration video will be linked here upon release.
 
+🎥 Video demonstration script (readability-optimized):
+demo_extension/STRUMER_video_v2_7.py
+
 ---
 
 ## 🌐 **STRUMER — Structural Media Resolution**
@@ -381,6 +384,7 @@ it reveals that output was always determined by structure.
 
 - [Python Reference](demo/strumer_v2_3.py)  
 - [HTML Visual Demo](demo/STRUMER_HTML_v2_3.html)  
+- [Video Demo Script (v2.7)](demo_extension/STRUMER_video_v2_7.py)
 
 ---
 
