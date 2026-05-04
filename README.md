@@ -27,8 +27,8 @@ It depends only on structure.
 🚧 **This repository contains the canonical Phase I reference implementation.**  
 🎬 The official STRUMER demonstration video will be linked here upon release.
 
-🎥 Video demonstration script (readability-optimized):
-demo_extension/STRUMER_video_v2_7.py
+🎥 Video demonstration script (readability-optimized):  
+[STRUMER_video_v2_7.py](demo_extension/STRUMER_video_v2_7.py)
 
 ---
 
