@@ -24,11 +24,16 @@ It depends only on structure.
 
 ---
 
-🚧 **This repository contains the canonical Phase I reference implementation.**  
-🎬 The official STRUMER demonstration video will be linked here upon release.
+🚧 **This repository contains the canonical Phase I reference implementation.**
 
-🎥 Video demonstration script (readability-optimized):  
-[STRUMER_video_v2_7.py](demo_extension/STRUMER_video_v2_7.py)
+---
+
+## 🎬 **STRUMER Demonstration Video**
+
+https://www.youtube.com/watch?v=6Mk1A_maIqE
+
+*(Generated entirely from structure — no editing, no timeline, no manual adjustment.)*  
+*Demonstration uses extended `STRUMER_video_v2_7.py`.*
 
 ---
 
@@ -43,9 +48,6 @@ A video does not need editors, timelines, or manual adjustments to exist.
 The video becomes visible only when structure resolves.
 
 **Deterministic • Structure-Based • No Editing • No Timeline • No Manual Composition**
-
-`video != editing`  
-`video = resolve(structure)`
 
 ---
 
@@ -83,7 +85,7 @@ python demo/strumer_v2_3.py
 
 This is the entire thesis in action.
 
-If the same structure always produces the same video — across runs, machines, and environments — then editing was never fundamental.
+If the same structure always produces the same video — across runs, machines, and environments — editing was never fundamental.
 
 **Structure reveals the video. Tools only render it.**
 
@@ -126,10 +128,10 @@ What if video creation never required editing tools?
 
 Traditional systems assume:
 
-video requires editing  
-layout requires manual adjustment  
-timing requires trial and error  
-output depends on tools  
+`video requires editing`  
+`layout requires manual adjustment`  
+`timing requires trial and error`  
+`output depends on tools`
 
 STRUMER demonstrates:
 
@@ -291,20 +293,6 @@ no video exists
 
 `incomplete -> ABSTAIN`  
 `conflict -> BLOCKED`
-
----
-
-## ⚡ **Try It in 30 Seconds (Zero Editing)**
-
-Run:
-
-```
-python demo/strumer_v2_3.py
-```
-
-**Output:**
-
-A complete video generated from structure.
 
 ---
 
@@ -566,7 +554,7 @@ CLI + Web interface
 | Communication | [STILE](https://github.com/OMPSHUNYAYA/STILE)                       | Messaging / network        | Structure |
 | Traversal     | [STRAL-Path](https://github.com/OMPSHUNYAYA/STRAL-Path)             | Traversal / search         | Structure |
 | Infrastructure| [STIC](https://github.com/OMPSHUNYAYA/STIC)                         | Cloud / infrastructure     | Structure |
-| Media | [STRUMER](https://github.com/OMPSHUNYAYA/STRUMER) | Editing | Structure |
+| Media         | [STRUMER](https://github.com/OMPSHUNYAYA/STRUMER)                    | Editing                   | Structure |
 | Finance       | [SLANG-Money](https://github.com/OMPSHUNYAYA/SLANG-Money)           | Transactions               | Structure |
 | Audit         | [SLANG-Audit](https://github.com/OMPSHUNYAYA/SLANG-Audit)           | Verification workflows     | Structure |
 
