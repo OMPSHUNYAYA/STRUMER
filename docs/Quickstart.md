@@ -242,6 +242,7 @@ STRUMER/
 
 ├── STRUMER-D/  
 │   ├── strumer_d_v2_0.py  
+│   ├── STRUMER_D_video_v1_8_5.py  
 │   ├── STRUMER_D_v2_0_overview.png  
 │   ├── STRUMER_D_v2_0_flowchart.png  
 │   ├── STRUMER_D_v2_0_mindmap.png  
