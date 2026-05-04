@@ -179,6 +179,36 @@ Both follow the same invariant:
 
 ---
 
+## 🎬 **Video Demonstration (Structure → Video)**
+
+This folder also includes a structural video demonstration:
+
+```
+python STRUMER_D_video_v1_8_5.py
+```
+
+
+**What this shows:**
+
+• The same structural principles can generate full video output  
+• No editing, no timeline, no manual composition  
+• Structure defines frames, transitions, and layout  
+
+This extends the same structural principle across output domains:
+
+`video_output = resolve(structure)`
+
+The same structure can produce different outputs — deterministically.
+
+---
+
+**Note:**
+
+STRUMER-D focuses on **diagram resolution**.  
+The video script demonstrates how the same structural model can produce **media output deterministically**.
+
+---
+
 ## 🧭 **Final Statement**
 
 Drawing did not create the diagram.  
