@@ -222,12 +222,14 @@ Use STRUMER to define the video.
 
 **Structural Diagram Resolution**
 
-STRUMER-D extends STRUMER from video → diagrams.
+STRUMER-D extends the same structural principle from video → diagrams.
 
 No drawing tools. No layout tuning.  
 Diagrams become visible when structure resolves.
 
 `diagram_visible iff diagram_structure_complete AND diagram_structure_consistent`
+
+Explore the diagram counterpart:
 
 → [Open STRUMER-D](STRUMER-D/)
 
@@ -391,8 +393,9 @@ it reveals that output was always determined by structure.
 - [Video Demo Script (v2.7)](demo_extension/STRUMER_video_v2_7.py)
 
 ### 🧩 STRUMER-D (Diagrams Without Drawing)
-- [STRUMER-D Script (v2.0)](STRUMER-D/strumer_d_v2_0.py)  
-- [STRUMER-D Outputs](STRUMER-D/)
+- [STRUMER-D Diagram Script (v2.0)](STRUMER-D/strumer_d_v2_0.py)  
+- [STRUMER-D Video Script (v1.8.5)](STRUMER-D/STRUMER_D_video_v1_8_5.py)  
+- [STRUMER-D Folder](STRUMER-D/)
 
 ---
 
@@ -444,7 +447,9 @@ does not change output.
 
 ## 📁 **Repository Structure**
 
-- `demo/` — reference script + visual demo  
+- `demo/` — STRUMER reference script + visual demo  
+- `demo_extension/` — extended STRUMER video demonstration script  
+- `STRUMER-D/` — structural diagram resolution scripts, generated diagram artifacts, and STRUMER-D video script  
 - `docs/` — conceptual, architectural, and formal documentation  
 - `VERIFY/` — reproducibility and integrity checks
 
