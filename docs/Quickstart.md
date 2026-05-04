@@ -236,6 +236,8 @@ STRUMER/
 ├── demo/  
 │   ├── strumer_v2_3.py  
 │   ├── STRUMER_HTML_v2_3.html  
+├── demo_extension/  
+│   ├── STRUMER_video_v2_7.py  
 
 ├── docs/  
 │   ├── FAQ.md  
