@@ -236,8 +236,17 @@ STRUMER/
 ├── demo/  
 │   ├── strumer_v2_3.py  
 │   ├── STRUMER_HTML_v2_3.html  
+
 ├── demo_extension/  
 │   ├── STRUMER_video_v2_7.py  
+
+├── STRUMER-D/  
+│   ├── strumer_d_v2_0.py  
+│   ├── STRUMER_D_v2_0_overview.png  
+│   ├── STRUMER_D_v2_0_flowchart.png  
+│   ├── STRUMER_D_v2_0_mindmap.png  
+│   ├── STRUMER_D_v2_0_sequence.png  
+│   └── STRUMER_D_v2_0_polygon.png  
 
 ├── docs/  
 │   ├── FAQ.md  
