@@ -1,0 +1,80 @@
+STRUMER-A v1.3 VERIFY REPORT
+Structural Audio Resolution
+
+Generated: 2026-05-06T15:42:16
+
+Principle: audio_output = resolve(structure)
+Final law: audio_visible iff audio_structure_complete AND audio_structure_consistent
+
+Core guarantees:
+same structure -> same structure_signature
+same structure -> same audio_sha256
+same structure -> same final_certificate
+changed structure -> changed structure_signature
+changed structure -> changed audio_sha256
+incomplete structure -> ABSTAIN
+conflicting structure -> BLOCKED
+
+Generated files:
+STRUMER_A_v1_3.wav
+STRUMER_A_v1_3_repeat.wav
+STRUMER_A_v1_3_changed.wav
+STRUMER_A_v1_3_waveform.png
+
+Results:
+
+Case 1 state: RESOLVED
+Case 1 reason: complete structural audio
+Case 1 structure_certificate: 348ffa591e2813c6
+Case 1 structure_signature: 348ffa591e2813c69edc4c1cb68a65a999c0063a0a76ec87add3cccc292a45b8
+Case 1 resolution_signature: 29df8df13fd399c3
+Case 1 output: STRUMER_A_v1_3.wav
+Case 1 audio_sha256: d19f6da4a20f1d0061e7cc06e343e37b6514af1a97197ca4ba4588c2fca6de5c
+Case 1 sample_count: 85113
+Case 1 final_certificate: 04216da06058c5c7
+
+Case 2 repeat state: RESOLVED
+Case 2 repeat reason: complete structural audio
+Case 2 repeat structure_certificate: 348ffa591e2813c6
+Case 2 repeat structure_signature: 348ffa591e2813c69edc4c1cb68a65a999c0063a0a76ec87add3cccc292a45b8
+Case 2 repeat resolution_signature: 29df8df13fd399c3
+Case 2 repeat output: STRUMER_A_v1_3_repeat.wav
+Case 2 repeat audio_sha256: d19f6da4a20f1d0061e7cc06e343e37b6514af1a97197ca4ba4588c2fca6de5c
+Case 2 repeat sample_count: 85113
+Case 2 repeat final_certificate: 04216da06058c5c7
+
+Case 3 incomplete state: ABSTAIN
+Case 3 incomplete reason: missing audio structure
+Case 3 incomplete structure_certificate: ddb438bc9e7a0756
+Case 3 incomplete structure_signature: ddb438bc9e7a0756fb9b99ef582c3486f24e8aa9d03026eb6fdd530e526483d5
+Case 3 incomplete resolution_signature: b64a34a55e9b6f9b
+
+Case 4 conflicting state: BLOCKED
+Case 4 conflicting reason: frequency must be positive
+Case 4 conflicting structure_certificate: f8cca229eb29c5ab
+Case 4 conflicting structure_signature: f8cca229eb29c5abcff9d4d5d55d094902c4424df8b91cb84d91bdc3591e161a
+Case 4 conflicting resolution_signature: 3d9279da1ddd1f48
+
+Case 5 changed state: RESOLVED
+Case 5 changed reason: complete structural audio
+Case 5 changed structure_certificate: ea74414999de5e22
+Case 5 changed structure_signature: ea74414999de5e220c466f9eb6c9f091b9d601d98f8698f6d661edb02ede912a
+Case 5 changed resolution_signature: 02e6f6402c395d68
+Case 5 changed output: STRUMER_A_v1_3_changed.wav
+Case 5 changed audio_sha256: 953c4d233673847019de6862254f49d3844ab1d5e79176285cd92f51c2f4292b
+Case 5 changed sample_count: 85113
+Case 5 changed final_certificate: 0971eda94019d115
+
+Verification checks:
+Structure determinism check: PASS
+Audio determinism check: PASS
+Final certificate check: PASS
+Structure change signature check: PASS
+Structure change audio check: PASS
+Structure change final certificate check: PASS
+Incomplete structure check: PASS
+Conflicting structure check: PASS
+Waveform image generated: PASS
+
+Conclusion:
+PASS - STRUMER-A v1.3 deterministic structural audio proof verified.
