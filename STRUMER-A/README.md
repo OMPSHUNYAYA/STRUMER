@@ -351,6 +351,16 @@ All under the same invariant:
 
 ---
 
+## 🎬 Published Demonstration Video
+
+This folder also includes the deterministic video script used to generate the published STRUMER-A YouTube demonstration.
+
+`same structure -> same video -> same structural explanation`
+
+The video exists as a public visual explanation of the structural audio proof demonstrated in this folder.
+
+---
+
 ## 🧭 **Final Statement**
 
 Editing did not create the audio.  
