@@ -235,6 +235,23 @@ Explore the diagram counterpart:
 
 ---
 
+## 🔊 **STRUMER-A — Audio Without Editing**
+
+### **Structural Audio Resolution**
+
+STRUMER-A extends the same structural principle from video → audio.
+
+No audio editors. No waveform tuning.  
+Audio becomes audible when structure resolves.
+
+`audio_visible iff audio_structure_complete AND audio_structure_consistent`
+
+Explore the structural audio counterpart:
+
+→ [Open STRUMER-A](STRUMER-A/)
+
+---
+
 ## 🧱 **Layer Separation (Critical)**
 
 **Structure Layer:**  
@@ -397,6 +414,11 @@ it reveals that output was always determined by structure.
 - [STRUMER-D Video Script (v1.8.5)](STRUMER-D/STRUMER_D_video_v1_8_5.py)  
 - [STRUMER-D Folder](STRUMER-D/)
 
+### 🔊 STRUMER-A (Audio Without Editing)
+- [STRUMER-A Reference Script (v1.3)](STRUMER-A/strumer_a_v1_3.py)  
+- [STRUMER-A Folder](STRUMER-A/)  
+- [Waveform Validation Artifact](STRUMER-A/STRUMER_A_v1_3_waveform.png)
+
 ---
 
 ## 🔐 **Verification & Reproducibility**
@@ -449,7 +471,8 @@ does not change output.
 
 - `demo/` — STRUMER reference script + visual demo  
 - `demo_extension/` — extended STRUMER video demonstration script  
-- `STRUMER-D/` — structural diagram resolution scripts, generated diagram artifacts, and STRUMER-D video script  
+- `STRUMER-D/` — structural diagram resolution scripts, generated diagram artifacts, and STRUMER-D video script
+- `STRUMER-A/` — structural audio resolution script, generated audio artifacts, waveform validation, and VERIFY report
 - `docs/` — conceptual, architectural, and formal documentation  
 - `VERIFY/` — reproducibility and integrity checks
 
