@@ -416,6 +416,7 @@ it reveals that output was always determined by structure.
 
 ### 🔊 STRUMER-A (Audio Without Editing)
 - [STRUMER-A Reference Script (v1.3)](STRUMER-A/strumer_a_v1_3.py)  
+- [STRUMER-A Video Script (v1.9)](STRUMER-A/STRUMER_A_video_v1_9.py)  
 - [STRUMER-A Folder](STRUMER-A/)  
 - [Waveform Validation Artifact](STRUMER-A/STRUMER_A_v1_3_waveform.png)
 
