@@ -85,13 +85,41 @@ python demo/strumer_v2_3.py
 
 This is the entire thesis in action.
 
-If the same structure always produces the same video — across runs, machines, and environments — editing was never fundamental.
+If the same structure consistently produces the same video, editing sequence is no longer the source of correctness.
 
 **Structure reveals the video. Tools only render it.**
 
 Try it now.
 
 No setup beyond Python 3.9+ and the listed dependencies.
+
+---
+
+## 🔁 **Determinism & Reproducibility**
+
+STRUMER treats media as a reproducible structural artifact.
+
+`same structure -> same video`
+
+This enables:
+
+- deterministic regeneration  
+- structural diffability  
+- reproducible media builds  
+- audit-safe rendering  
+- replay verification  
+- large-scale template consistency  
+
+Traditional editing workflows often depend on:
+- manual adjustment
+- environment drift
+- editor state
+- timeline interaction
+- render variability
+
+STRUMER reduces these dependencies through structure-defined generation.
+
+The output is determined by structure — not by editing sequence.
 
 ---
 
@@ -103,7 +131,7 @@ No setup beyond Python 3.9+ and the listed dependencies.
 | Scripted Media | Partial          | Partial         | Conditional   |
 | STRUMER        | No               | Yes             | Yes           |
 
-STRUMER is the only model where output is defined by structure — not by editing or execution process.
+STRUMER treats video as a deterministic structural artifact rather than a manually edited timeline artifact.
 
 ---
 
@@ -185,9 +213,10 @@ Trial and error • manual adjustment • tool dependency
 STRUMER:  
 Determinism • reproducibility • structure-first creation  
 
-This is not optimization — it is dependency elimination.
+This is not only optimization.
+It is structural dependency reduction through deterministic generation.
 
-Editing did not create the video.  
+Editing sequence did not determine the video. 
 **Structure did.**
 
 ---
@@ -209,6 +238,10 @@ Tools may assist visualization or execution
 Use tools for rendering if needed.
 
 Use STRUMER to define the video.
+
+STRUMER does not remove creative authorship.
+
+It removes manual timeline dependency as the source of media correctness.
 
 ---
 
@@ -454,7 +487,7 @@ Full verification checklist and expected states are available in:
 
 `same structure -> same video -> same output signature`
 
-### **Tool / Environment Independence**
+### **Tool / Environment Stability Target**
 
 Changing:
 
@@ -462,9 +495,24 @@ Changing:
 - Operating system  
 - Rendering libraries  
 
-does not change output.
+should not change output when rendering dependencies are equivalently pinned.
 
 **Only structure determines the result.**
+
+---
+
+## 🧠 **Why Determinism Matters**
+
+Deterministic media enables:
+
+- reproducible compliance reporting  
+- audit-safe publishing  
+- replay verification  
+- scalable personalization  
+- structural diffability  
+- regression testing for media pipelines  
+
+This moves media generation closer to reproducible software builds.
 
 ---
 
@@ -579,6 +627,21 @@ We welcome extensions that expand capability without breaking the core invariant
 
 ---
 
+### **What STRUMER Demonstrates Clearly**
+
+Phase I strongly demonstrates:
+
+- deterministic media generation  
+- structure-defined output  
+- replay-safe rendering  
+- reusable structural templates  
+- editing-independent slide/video generation  
+- structural admissibility (RESOLVED / ABSTAIN / BLOCKED)
+
+The current scope focuses on structured, template-driven media systems.
+
+---
+
 ## 🔭 **Roadmap**
 
 Multi-format generation  
@@ -625,10 +688,10 @@ It is distinct from Shunyata and is not a restatement of any prior philosophical
 
 ## 🧭 **Final Statement**
 
-Editing did not create the video.  
-Tools did not create the video.
+Editing sequence did not determine the video.
+Tools rendered it. Structure determined it.
 
-The video is not produced — it is revealed by structure.
+The video is structurally determined before it is rendered.
 
 When structure is complete and consistent:  
 video becomes visible.
