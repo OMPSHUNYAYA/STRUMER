@@ -64,7 +64,7 @@ python strumer_d_v2_0.py
 
 This is the entire thesis in action.
 
-If the same structure always produces the same diagram — across runs, machines, and environments — drawing was never fundamental.
+If the same structure consistently produces the same diagram, drawing sequence is no longer the source of correctness.
 
 **Structure reveals the diagram. Tools only render it.**
 
@@ -78,7 +78,7 @@ If the same structure always produces the same diagram — across runs, machines
 | Scripted Layouts | Partial         | Partial         | Conditional   |
 | STRUMER-D        | No              | Yes             | Yes           |
 
-STRUMER-D is the only model where output is defined by structure — not by drawing or layout process.
+STRUMER-D treats diagrams as deterministic structural artifacts rather than manually positioned layout artifacts.
 
 ---
 
@@ -104,7 +104,7 @@ STRUMER-D is the only model where output is defined by structure — not by draw
 
 `diagram_output = resolve(structure)`
 
-If output remains after removing a dependency, that dependency was never fundamental.
+If output remains stable after reducing a dependency, that dependency may not be fundamental to correctness.
 
 ---
 
@@ -123,7 +123,7 @@ STRUMER-D demonstrates:
 `conflicting structure -> no arbitrary output`  
 
 **This is not a better drawing tool.  
-This is the removal of drawing as a requirement.**
+This is the removal of manual drawing as a requirement.**
 
 ---
 
@@ -154,6 +154,35 @@ Each generated deterministically from structure.
 ## 🔐 **Core Guarantee**
 
 `same structure -> same diagram -> same output signature`
+
+---
+
+## 🔁 **Determinism & Reproducibility**
+
+STRUMER-D treats diagrams as reproducible structural artifacts.
+
+`same structure -> same diagram`
+
+This enables:
+
+- deterministic regeneration  
+- structural diffability  
+- replay verification  
+- reusable templates  
+- audit-safe rendering  
+- large-scale layout consistency  
+
+Traditional diagram workflows often depend on:
+
+- manual positioning  
+- layout iteration  
+- editor state  
+- environment drift  
+- visual adjustment cycles  
+
+STRUMER-D reduces these dependencies through structure-defined generation.
+
+The output is determined by structure — not by drawing sequence.
 
 ---
 
@@ -211,8 +240,8 @@ The video script demonstrates how the same structural model can produce **media 
 
 ## 🧭 **Final Statement**
 
-Drawing did not create the diagram.  
-Tools did not create the diagram.
+Drawing sequence did not determine the diagram.
+Tools rendered it. Structure determined it.
 
 The diagram is not drawn — it is revealed by structure.
 
@@ -221,6 +250,6 @@ diagram becomes visible.
 
 Deterministically.  
 Reproducibly.  
-Independently of drawing.
+Independently of manual drawing workflows.
 
 **This is STRUMER-D.**
