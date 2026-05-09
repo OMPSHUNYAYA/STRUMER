@@ -62,7 +62,7 @@ python strumer_a_v1_3.py
 
 This is the entire thesis in action.
 
-If the same structure always produces the same audio — across runs, machines, and environments — editing was never structurally fundamental.
+If the same structure consistently produces the same audio, editing sequence is no longer the source of correctness.
 
 **Structure reveals the audio. Tools merely render it.**
 
@@ -104,7 +104,7 @@ The verification report should show all checks as PASS.
 | Scripted Audio | Partial | Partial | Conditional |
 | STRUMER-A | No | Yes | Yes |
 
-STRUMER-A is the only model where output is defined by structure — not by editing or waveform workflow.
+STRUMER-A treats audio as a deterministic structural artifact rather than a manually edited waveform artifact.
 
 ---
 
@@ -130,7 +130,7 @@ STRUMER-A is the only model where output is defined by structure — not by edit
 
 `audio_output = resolve(structure)`
 
-If output remains after removing a dependency, that dependency was never fundamental.
+If output remains stable after reducing a dependency, that dependency may not be fundamental to correctness.
 
 ---
 
@@ -195,6 +195,35 @@ Each artifact is generated deterministically from structure.
 This creates deterministic replayability across environments, machines, and executions.
 
 The output is structurally reproducible.
+
+---
+
+## 🔁 **Determinism & Reproducibility**
+
+STRUMER-A treats audio as a reproducible structural artifact.
+
+`same structure -> same audio`
+
+This enables:
+
+• deterministic regeneration  
+• replay verification  
+• waveform diffability  
+• reusable structural templates  
+• audit-safe rendering  
+• large-scale audio consistency  
+
+Traditional audio workflows often depend on:
+
+• manual waveform adjustment  
+• DAW editor state  
+• timeline sequencing  
+• environment drift  
+• iterative tuning cycles  
+
+STRUMER-A reduces these dependencies through structure-defined generation.
+
+The output is determined by structure — not by editing sequence.
 
 ---
 
@@ -291,7 +320,7 @@ Try to define a structure that produces:
 • output from incomplete structure  
 • arbitrary output from conflicting structure  
 
-If you cannot, then editing was never structurally fundamental.
+If you cannot, then editing sequence may not be fundamental to audio correctness.
 
 ---
 
@@ -363,8 +392,8 @@ The video exists as a public visual explanation of the structural audio proof de
 
 ## 🧭 **Final Statement**
 
-Editing did not create the audio.  
-Tools did not create the waveform.
+Editing sequence did not determine the audio.  
+Tools rendered it. Structure determined it.
 
 The audio is not edited — it is revealed by structure.
 
@@ -373,7 +402,7 @@ audio becomes audible.
 
 Deterministically.  
 Reproducibly.  
-Independently of editing.
+Independently of manual editing workflows.
 
 **This is STRUMER-A.**
 
