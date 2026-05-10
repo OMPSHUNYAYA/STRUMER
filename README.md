@@ -285,6 +285,23 @@ Explore the structural audio counterpart:
 
 ---
 
+## 🖼 **STRUMER-I — Images Without Manual Construction**
+
+### **Structural Image Resolution**
+
+STRUMER-I extends the same structural principle from video → images.
+
+No drawing workflows. No manual composition.  
+Images become visible when structure resolves.
+
+`image_visible iff image_structure_complete AND image_structure_consistent`
+
+Explore the structural image counterpart:
+
+→ [Open STRUMER-I](STRUMER-I/)
+
+---
+
 ## 🧱 **Layer Separation (Critical)**
 
 **Structure Layer:**  
@@ -455,6 +472,17 @@ it reveals that output was always determined by structure.
 
 ---
 
+### 🖼 STRUMER-I (Images Without Manual Construction)
+- [STRUMER-I Reference Script (v1.1)](STRUMER-I/strumer_i_v1_1.py)  
+- [STRUMER-I Folder](STRUMER-I/)  
+- [Canonical Resolved Image](STRUMER-I/STRUMER_I_v1_1.png)  
+- [Deterministic Replay Image](STRUMER-I/STRUMER_I_v1_1_repeat.png)  
+- [Changed Structural Image](STRUMER-I/STRUMER_I_v1_1_changed.png)  
+- [Incomplete Structural State](STRUMER-I/STRUMER_I_v1_1_incomplete.png)  
+- [Conflict Structural State](STRUMER-I/STRUMER_I_v1_1_conflict.png)
+
+---
+
 ## 🔐 **Verification & Reproducibility**
 
 ### **Quick Determinism Check**
@@ -522,6 +550,7 @@ This moves media generation closer to reproducible software builds.
 - `demo_extension/` — extended STRUMER video demonstration script  
 - `STRUMER-D/` — structural diagram resolution scripts, generated diagram artifacts, and STRUMER-D video script
 - `STRUMER-A/` — structural audio resolution script, generated audio artifacts, waveform validation, and VERIFY report
+- `STRUMER-I/` — structural image resolution engine, deterministic image artifacts, replay validation outputs, manifests, and structural verification reports
 - `docs/` — conceptual, architectural, and formal documentation  
 - `VERIFY/` — reproducibility and integrity checks
 
@@ -651,8 +680,12 @@ Canonical output identity
 CLI + Web interface
 
 ---
-
 ## 🧱 **Cross-System Dependency Elimination Map**
+
+Across these systems, the same structural pattern appears repeatedly.
+
+The dependency changes.  
+The preserved invariant does not.
 
 | Domain        | System | Removed Dependency                  | What Preserves Correctness |
 |---------------|--------|------------------------------------|----------------------------|
@@ -666,9 +699,19 @@ CLI + Web interface
 | Communication | [STILE](https://github.com/OMPSHUNYAYA/STILE)                       | Messaging / network        | Structure |
 | Traversal     | [STRAL-Path](https://github.com/OMPSHUNYAYA/STRAL-Path)             | Traversal / search         | Structure |
 | Infrastructure| [STIC](https://github.com/OMPSHUNYAYA/STIC)                         | Cloud / infrastructure     | Structure |
-| Media         | [STRUMER](https://github.com/OMPSHUNYAYA/STRUMER)                    | Editing                   | Structure |
+| Media         | [STRUMER](https://github.com/OMPSHUNYAYA/STRUMER)                    | Editing / manual media workflows | Structure |
 | Finance       | [SLANG-Money](https://github.com/OMPSHUNYAYA/SLANG-Money)           | Transactions               | Structure |
 | Audit         | [SLANG-Audit](https://github.com/OMPSHUNYAYA/SLANG-Audit)           | Verification workflows     | Structure |
+
+Each row demonstrates a reduction of runtime dependency through structure.
+
+Correctness remains reproducible under structural constraints.
+
+Dependencies may shift from runtime coordination toward structural definition,
+while preserving deterministic outcomes.
+
+If correctness remains stable after reducing a dependency,
+that dependency may not be fundamental to correctness.
 
 ---
 
