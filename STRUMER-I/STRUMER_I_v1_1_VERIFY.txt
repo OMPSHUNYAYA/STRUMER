@@ -1,0 +1,118 @@
+STRUMER-I v1.1 VERIFY
+Structural Object-Field Image Resolution
+
+Principle: image_output = resolve(structure)
+Law: image_visible iff structure_complete AND structure_consistent
+Object law: object_visible iff object_structure_complete AND object_structure_consistent
+
+CANONICAL
+created_image: STRUMER_I_v1_1.png
+resolution_state: RESOLVED
+resolution_note: object field resolved
+structure_signature: 547eec9592691cb0e7001aacae61c01f14a48f28285254d11a5e80f6b72e722b
+certificate: 547eec9592691cb0
+image_sha256: 6e76e5f92fe7e1718310c2bde842960c2c1b49aea8d1635654d38917cf9fc39a
+object_certificates:
+  east_node: 0d7a08a98e909879
+  north_arc: 1a32808c4dd7aad6
+  origin_core: 9a42293b2c00e922
+  south_arc: 04878e1a95cb5de0
+  west_node: a0c5e6ea9878987f
+
+REPEAT
+created_image: STRUMER_I_v1_1_repeat.png
+resolution_state: RESOLVED
+resolution_note: object field resolved
+structure_signature: 547eec9592691cb0e7001aacae61c01f14a48f28285254d11a5e80f6b72e722b
+certificate: 547eec9592691cb0
+image_sha256: 6e76e5f92fe7e1718310c2bde842960c2c1b49aea8d1635654d38917cf9fc39a
+object_certificates:
+  east_node: 0d7a08a98e909879
+  north_arc: 1a32808c4dd7aad6
+  origin_core: 9a42293b2c00e922
+  south_arc: 04878e1a95cb5de0
+  west_node: a0c5e6ea9878987f
+
+CHANGED
+created_image: STRUMER_I_v1_1_changed.png
+resolution_state: RESOLVED
+resolution_note: object field resolved
+structure_signature: b6e872c7956d4f8de4c2f54e4d96db517c50c329506e1696b4ab359b6d185ff8
+certificate: b6e872c7956d4f8d
+image_sha256: 65f5270ccbb50ba8da89ac74c1fbb05cb8fea84dcd7fc8f17be5d06342559687
+object_certificates:
+  east_node: 68d629d183a0ad7e
+  north_arc: 75b872414baab3a2
+  origin_core: ab412251d9d8006b
+  south_arc: d3d907f40eecd63b
+  west_node: 36e90b63cb5c734a
+
+INCOMPLETE
+created_image: STRUMER_I_v1_1_incomplete.png
+resolution_state: INCOMPLETE
+resolution_note: object incomplete: south_arc
+structure_signature: ffb28def6287e5e475bd4cb41be9526ce80a0a688af902180ce7aa6e83746dfb
+certificate: ffb28def6287e5e4
+image_sha256: 8fcbb7b0dbe7b14c3cf05365c91d79f48405a3562165fd307f4ff8d517a4b6cb
+object_certificates:
+  east_node: 0d7a08a98e909879
+  north_arc: 1a32808c4dd7aad6
+  origin_core: 9a42293b2c00e922
+  south_arc: 546511f4ba1c37f1
+  west_node: a0c5e6ea9878987f
+
+CONFLICT
+created_image: STRUMER_I_v1_1_conflict.png
+resolution_state: CONFLICT
+resolution_note: object inconsistent: east_node
+structure_signature: a3b846f6fa31f53e81aea2fe971293f89a7877a611d5d45a1ea05f752bfae4d2
+certificate: a3b846f6fa31f53e
+image_sha256: 304e07c33bb5d6b826c6e817ce020c2e56beee0bb4b54bad472071e2ca91bca7
+object_certificates:
+  east_node: c75727731f0efe95
+  north_arc: 1a32808c4dd7aad6
+  origin_core: 9a42293b2c00e922
+  south_arc: 04878e1a95cb5de0
+  west_node: a0c5e6ea9878987f
+
+Structural diff: CHANGED
+  field.name: canonical_object_field -> changed_object_field
+  east_node.position: [810, 358] -> [850, 371]
+  east_node.radius: 31 -> 39
+  north_arc.position: [640, 248] -> [595, 248]
+  origin_core.radius: 27 -> 35
+  south_arc.position: [640, 457] -> [690, 457]
+  west_node.position: [470, 358] -> [430, 343]
+  west_node.radius: 31 -> 27
+
+Structural diff: INCOMPLETE
+  field.name: canonical_object_field -> incomplete_object_field
+  south_arc.complete: True -> False
+  south_arc.links: ['origin_core', 'east_node', 'west_node'] -> ['origin_core', 'missing_object']
+
+Structural diff: CONFLICT
+  field.name: canonical_object_field -> conflict_object_field
+  east_node.consistent: True -> False
+  east_node.position: [810, 358] -> [470, 358]
+
+Determinism checks:
+same object field -> same image: True
+same object field -> same certificate: True
+changed object field -> visibly changed image: True
+changed object field -> changed certificate: True
+incomplete object field -> no forced image: True
+conflicting object field -> no arbitrary image: True
+
+FINAL VISIBLE IMAGE: RESOLVED
+FINAL REPEAT IMAGE: RESOLVED
+FINAL CHANGED IMAGE: RESOLVED
+FINAL INCOMPLETE IMAGE: BLOCKED
+FINAL CONFLICT IMAGE: BLOCKED
+
+Guarantees:
+same object field -> same image
+same object field -> same certificate
+changed object field -> visibly changed image
+changed object field -> changed certificate
+incomplete object field -> no forced image
+conflicting object field -> no arbitrary image
