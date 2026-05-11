@@ -480,7 +480,7 @@ it reveals that output was always determined by structure.
 - [Changed Structural Image](STRUMER-I/STRUMER_I_v1_1_changed.png)  
 - [Incomplete Structural State](STRUMER-I/STRUMER_I_v1_1_incomplete.png)  
 - [Conflict Structural State](STRUMER-I/STRUMER_I_v1_1_conflict.png)
-- [STRUMER-I Video Script (v1.10)](STRUMER-I/strumer_i_structural_cinema_v1_10.py)  
+- [STRUMER-I Video Script (v1.11)](STRUMER-I/strumer_i_structural_cinema_v1_11.py)  
   **Deterministic cinematic explanation of Structural Image Resolution.**
 
 ---
