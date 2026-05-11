@@ -347,6 +347,34 @@ The broader STRUMER ecosystem demonstrates how the same deterministic structural
 
 ---
 
+## 🎬 **Published Demonstration Video**
+
+This folder also includes the deterministic cinematic script used to generate the published STRUMER-I structural explanation video.
+
+`same structure -> same image -> same structural explanation`
+
+The video exists as a public visual explanation of the structural image proof demonstrated in this folder.
+
+### Included Script
+
+- `strumer_i_structural_cinema_v1_10.py`  
+  Deterministic structural cinema script for the published STRUMER-I demonstration video.
+
+The script demonstrates:
+
+• structural image resolution  
+• deterministic replay  
+• structure mutation visibility  
+• incomplete structure blocking  
+• conflict blocking  
+• structure-first visual generation  
+
+All under the same invariant:
+
+`image_output = resolve(structure)`
+
+---
+
 ## 🧭 **Final Statement**
 
 Manual construction did not determine the image.  
