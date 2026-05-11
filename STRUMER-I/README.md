@@ -357,7 +357,7 @@ The video exists as a public visual explanation of the structural image proof de
 
 ### Included Script
 
-- `strumer_i_structural_cinema_v1_10.py`  
+- `strumer_i_structural_cinema_v1_11.py`  
   Deterministic structural cinema script for the published STRUMER-I demonstration video.
 
 The script demonstrates:
