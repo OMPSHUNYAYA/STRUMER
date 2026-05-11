@@ -480,6 +480,8 @@ it reveals that output was always determined by structure.
 - [Changed Structural Image](STRUMER-I/STRUMER_I_v1_1_changed.png)  
 - [Incomplete Structural State](STRUMER-I/STRUMER_I_v1_1_incomplete.png)  
 - [Conflict Structural State](STRUMER-I/STRUMER_I_v1_1_conflict.png)
+- [STRUMER-I Video Script (v1.10)](STRUMER-I/strumer_i_structural_cinema_v1_10.py)  
+  **Deterministic cinematic explanation of Structural Image Resolution.**
 
 ---
 
@@ -680,6 +682,7 @@ Canonical output identity
 CLI + Web interface
 
 ---
+
 ## 🧱 **Cross-System Dependency Elimination Map**
 
 Across these systems, the same structural pattern appears repeatedly.
@@ -687,7 +690,7 @@ Across these systems, the same structural pattern appears repeatedly.
 The dependency changes.  
 The preserved invariant does not.
 
-| Domain        | System | Removed Dependency                  | What Preserves Correctness |
+| Domain        | System | Dependency Removed for Correctness                  | What Preserves Correctness |
 |---------------|--------|------------------------------------|----------------------------|
 | Computation   | [SLANG-Computation](https://github.com/OMPSHUNYAYA/SLANG-Computation) | Execution flow             | Structure |
 | Computation   | [STOCRS](https://github.com/OMPSHUNYAYA/STOCRS)                     | Execution pipelines        | Structure |
@@ -703,15 +706,13 @@ The preserved invariant does not.
 | Finance       | [SLANG-Money](https://github.com/OMPSHUNYAYA/SLANG-Money)           | Transactions               | Structure |
 | Audit         | [SLANG-Audit](https://github.com/OMPSHUNYAYA/SLANG-Audit)           | Verification workflows     | Structure |
 
-Each row demonstrates a reduction of runtime dependency through structure.
+Each row demonstrates removal of a dependency for correctness, while structure preserves correctness.
 
 Correctness remains reproducible under structural constraints.
 
-Dependencies may shift from runtime coordination toward structural definition,
-while preserving deterministic outcomes.
+Dependencies may shift from runtime coordination toward structural definition, while preserving deterministic outcomes.
 
-If correctness remains stable after reducing a dependency,
-that dependency may not be fundamental to correctness.
+If correctness remains stable after removing a dependency, that dependency may not be fundamental to correctness.
 
 ---
 
