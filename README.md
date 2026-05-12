@@ -2,11 +2,20 @@
 
 ## **Structural Media Resolution — Video Without Editing**
 
-![STRUMER](https://img.shields.io/badge/STRUMER-Structural%20Media%20Resolution-black) ![Structure-Based](https://img.shields.io/badge/Output-Structure%20Based-purple) ![Deterministic](https://img.shields.io/badge/Deterministic-Resolution-green) ![Editor-Independent](https://img.shields.io/badge/Editing-Not%20Required-blue)
+![STRUMER](https://img.shields.io/badge/STRUMER-Structural%20Media%20Resolution-black)
+![Structure-Defined](https://img.shields.io/badge/Output-Structure%20Defined-purple)
+![Deterministic](https://img.shields.io/badge/Deterministic-Resolution-green)
+![Replay-Verified](https://img.shields.io/badge/Replay-Verifiable-blue)
 
-![No-Editor](https://img.shields.io/badge/Video%20Editor-Not%20Required-lightgrey) ![No-Timeline](https://img.shields.io/badge/Timeline-Not%20Required-lightgrey) ![No-Manual-Adjustment](https://img.shields.io/badge/Manual%20Adjustment-Not%20Required-lightgrey) ![No-Guesswork](https://img.shields.io/badge/Guesswork-Not%20Required-lightgrey)
+![Structure-Driven](https://img.shields.io/badge/Generation-Structure%20Driven-lightgrey)
+![Timeline-Independent](https://img.shields.io/badge/Timeline-Manual%20Dependency%20Reduced-lightgrey)
+![Editing-Minimized](https://img.shields.io/badge/Editing-Structure%20Defined-lightgrey)
+![Admissibility-Model](https://img.shields.io/badge/States-RESOLVED%20%7C%20ABSTAIN%20%7C%20BLOCKED-lightgrey)
 
-![Dependency-Invariant](https://img.shields.io/badge/Dependency-Invariant-lightgrey) ![Python](https://img.shields.io/badge/Python-3.9%2B-blue) ![Reference-Engine](https://img.shields.io/badge/Engine-Reference%20v1.0-blue) ![Open-Standard](https://img.shields.io/badge/Reference-Open%20Standard-blue)
+![Dependency-Invariant](https://img.shields.io/badge/Dependency-Invariant-lightgrey)
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![Reference-Engine](https://img.shields.io/badge/Engine-Reference%20v1.0-blue)
+![Open-Standard](https://img.shields.io/badge/Reference-Open%20Standard-blue)
 
 ![STRUMER Verify](https://github.com/OMPSHUNYAYA/STRUMER/actions/workflows/strumer-verify.yml/badge.svg)
 
@@ -16,7 +25,7 @@
 
 This reference engine demonstrates a strict invariant:
 
-**video generation does not depend on editing, timelines, or manual workflows.**
+**deterministic video output does not require manual editing, timeline construction, or frame-by-frame workflows when structure is sufficient.**
 
 It depends only on structure.
 
@@ -28,12 +37,11 @@ It depends only on structure.
 
 ---
 
-## 🎬 **STRUMER Demonstration Video**
+🎬 STRUMER Demonstration Video
 
-https://www.youtube.com/watch?v=6Mk1A_maIqE
+Updated demonstration video coming soon.
 
-*(Generated entirely from structure — no editing, no timeline, no manual adjustment.)*  
-*Demonstration uses extended `STRUMER_video_v2_7.py`.*
+(Video generated from deterministic structure resolution — without manual timeline editing or frame-by-frame adjustment.)
 
 ---
 
@@ -41,9 +49,9 @@ https://www.youtube.com/watch?v=6Mk1A_maIqE
 
 **Where Structure Resolves and Video Becomes Visible**
 
-STRUMER removes editing as a dependency for video creation.
+STRUMER reduces reliance on manual editing workflows through structure-defined generation.
 
-A video does not need editors, timelines, or manual adjustments to exist.
+A deterministic video output does not require manual timeline construction or frame-by-frame adjustment when structure is sufficient.
 
 The video becomes visible only when structure resolves.
 
@@ -53,7 +61,7 @@ The video becomes visible only when structure resolves.
 
 ## ⚡ **The Claim**
 
-A complete video can be generated without any editing — when structure is sufficient.
+A complete deterministic video can be generated from structure without manual editing workflows — when structure is sufficient.
 
 ---
 
@@ -87,7 +95,7 @@ This is the entire thesis in action.
 
 If the same structure consistently produces the same video, editing sequence is no longer the source of correctness.
 
-**Structure reveals the video. Tools only render it.**
+**Structure determines admissible output. Tools render the visible realization.**
 
 Try it now.
 
@@ -171,7 +179,7 @@ When structure resolves, video becomes visible — deterministically.
 
 This is not a better editor.
 
-**This is the removal of editing as a requirement.**
+**This demonstrates that deterministic structured media generation does not fundamentally require manual timeline editing.**
 
 ---
 
@@ -457,7 +465,6 @@ it reveals that output was always determined by structure.
 ### 🎬 STRUMER (Video Without Editing)
 - [Python Reference](demo/strumer_v2_3.py)  
 - [HTML Visual Demo](demo/STRUMER_HTML_v2_3.html)  
-- [Video Demo Script (v2.7)](demo_extension/STRUMER_video_v2_7.py)
 
 ### 🧩 STRUMER-D (Diagrams Without Drawing)
 - [STRUMER-D Diagram Script (v2.0)](STRUMER-D/strumer_d_v2_0.py)  
