@@ -18,19 +18,19 @@ It depends only on structure.
 
 **Where Structure Resolves and Diagram Becomes Visible**
 
-STRUMER-D removes drawing as a dependency for diagram creation.
+STRUMER-D reduces reliance on manual drawing and layout workflows through structure-defined generation.
 
-A diagram does not need drawing tools, layout tuning, or manual placement to exist.
+A deterministic diagram output does not fundamentally require manual drawing or layout tuning when structure is sufficient.
 
 The diagram becomes visible only when structure resolves.
 
-**Deterministic • Structure-Based • No Drawing • No Layout Tuning • No Manual Placement**
+**Deterministic • Structure-Defined • Layout-Reduced • Replay-Verifiable**
 
 ---
 
 ## ⚡ **The Claim**
 
-A complete diagram can be generated without any drawing — when structure is sufficient.
+A complete deterministic diagram can be generated from structure without manual drawing workflows — when structure is sufficient.
 
 ---
 
@@ -41,7 +41,7 @@ A complete diagram can be generated without any drawing — when structure is su
 STRUMER-D proves that diagram output is determined by structure — not by drawing tools or layout workflows.
 
 Drawing may assist visualization.  
-**Structure alone determines the output.**
+**Structure determines admissible output.**
 
 ---
 
@@ -66,7 +66,7 @@ This is the entire thesis in action.
 
 If the same structure consistently produces the same diagram, drawing sequence is no longer the source of correctness.
 
-**Structure reveals the diagram. Tools only render it.**
+**Structure determines the admissible diagram. Tools render the visible realization.**
 
 ---
 
@@ -123,7 +123,7 @@ STRUMER-D demonstrates:
 `conflicting structure -> no arbitrary output`  
 
 **This is not a better drawing tool.  
-This is the removal of manual drawing as a requirement.**
+This demonstrates that deterministic structured diagram generation does not fundamentally require manual drawing workflows.**
 
 ---
 
@@ -219,7 +219,7 @@ Updated demonstration video coming soon.
 Drawing sequence did not determine the diagram.
 Tools rendered it. Structure determined it.
 
-The diagram is not drawn — it is revealed by structure.
+The diagram becomes visible through structural definition and deterministic resolution.
 
 When structure is complete and consistent:  
 diagram becomes visible.
