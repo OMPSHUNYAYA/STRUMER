@@ -6,7 +6,7 @@
 
 This reference engine demonstrates a strict invariant:
 
-**audio generation does not depend on editing tools, DAWs, waveform adjustment, or manual composition.**
+**deterministic audio generation does not fundamentally require manual waveform editing, timeline sequencing, or DAW-driven adjustment when structure is sufficient.**
 
 It depends only on structure.
 
@@ -16,19 +16,19 @@ It depends only on structure.
 
 ## 🌐 **STRUMER-A — Where Structure Becomes Audible**
 
-STRUMER-A removes editing as a dependency for audio generation.
+STRUMER-A reduces reliance on manual audio editing workflows through structure-defined generation.
 
-Audio does not need waveform editing, manual sequencing, or timeline adjustment to exist.
+A deterministic audio output does not fundamentally require manual waveform editing or timeline sequencing when structure is sufficient.
 
 The audio becomes audible only when structure resolves.
 
-**Deterministic • Structure-Based • No Editing • No Timeline • No Manual Composition**
+**Deterministic • Structure-Defined • Replay-Verifiable • Workflow-Reduced**
 
 ---
 
 ## ⚡ **The Claim**
 
-A complete audio output can be generated without audio editing — when structure is sufficient.
+A complete deterministic audio output can be generated from structure without manual audio editing workflows — when structure is sufficient.
 
 ---
 
@@ -38,8 +38,8 @@ A complete audio output can be generated without audio editing — when structur
 
 STRUMER-A proves that audio output is determined by structure — not by editing tools or waveform workflows.
 
-Audio tools may render playback.  
-**Structure alone determines the output.**
+Audio tools may assist rendering or playback.  
+**Structure determines admissible output.**
 
 ---
 
@@ -64,7 +64,7 @@ This is the entire thesis in action.
 
 If the same structure consistently produces the same audio, editing sequence is no longer the source of correctness.
 
-**Structure reveals the audio. Tools merely render it.**
+**Structure determines the admissible audio. Tools render the audible realization.**
 
 ---
 
@@ -150,7 +150,7 @@ STRUMER-A demonstrates:
 `conflicting structure -> no arbitrary output`  
 
 **This is not a better audio editor.  
-This is the removal of editing as a requirement.**
+This demonstrates that deterministic structured audio generation does not fundamentally require manual waveform editing workflows.**
 
 ---
 
@@ -158,7 +158,7 @@ This is the removal of editing as a requirement.**
 
 STRUMER-A demonstrates that waveform identity can emerge directly from structure.
 
-The waveform is not manually shaped into existence.
+The waveform is structurally determined through deterministic resolution.
 
 The waveform becomes visible only when structure resolves.
 
@@ -395,7 +395,7 @@ The video exists as a public visual explanation of the structural audio proof de
 Editing sequence did not determine the audio.  
 Tools rendered it. Structure determined it.
 
-The audio is not edited — it is revealed by structure.
+The audio becomes audible through structural definition and deterministic resolution.
 
 When structure is complete and consistent:  
 audio becomes audible.
