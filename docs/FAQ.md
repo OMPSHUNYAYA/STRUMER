@@ -67,9 +67,9 @@ The video is determined solely by:
 
 `video_visible iff video_structure_complete AND video_structure_consistent`
 
-This is a strict invariant:
+This is a structural invariant: 
 
-video does not depend on editing.
+admissible video output does not fundamentally depend on editing.
 
 ---
 
@@ -384,11 +384,12 @@ A deterministic result derived from the same structure.
 
 ### **E4. Why does determinism matter?**
 
-It proves output is independent of:
+It demonstrates that:
 
-- editing tools  
-- environment  
-- manual adjustments  
+- admissible output is structurally preserved  
+- preserved under equivalent rendering conditions  
+- independent of editing workflows  
+- independent of manual adjustments  
 
 ---
 
@@ -399,8 +400,8 @@ It proves output is independent of:
 This holds across:
 
 - different runs  
-- different machines  
-- different environments  
+- equivalent rendering environments  
+- equivalent dependency conditions  
 
 ---
 
