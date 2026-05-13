@@ -89,14 +89,13 @@ Thus:
 
 `same structure -> same video output`
 
-Resolution does not depend on:
+Resolution semantics do not depend on:
 
-- editing tools  
-- timeline manipulation  
-- manual adjustment  
-- rendering environment  
+- editing workflows
+- manual adjustment
+- rendering-specific authoring behavior
 
-It depends only on structural equality.
+Under equivalent rendering conditions, output depends only on structural equality.
 
 ---
 
@@ -119,8 +118,8 @@ This definition is total and deterministic over all inputs S.
 This invariant holds across:
 
 - independent runs  
-- different machines  
-- different environments  
+- equivalent rendering environments  
+- equivalent dependency conditions  
 
 It is the signature of structural media resolution.
 
@@ -128,13 +127,13 @@ It is the signature of structural media resolution.
 
 ## **2. Dependency Independence**
 
-Output is invariant under tool or environment state.
+Admissible output remains structurally reproducible under equivalent dependency and rendering conditions.
 
 `resolve(S, D1) = resolve(S, D2)` for all dependency states D1, D2
 
 Thus:
 
-dependency state does not affect output
+equivalent dependency conditions do not affect admissible output
 
 This is expressed as:
 
@@ -316,7 +315,7 @@ No requirement for:
 
 - editing  
 - manual alignment  
-- shared environment  
+- shared editing workflow
 
 Convergence depends only on structural equivalence.
 
@@ -438,7 +437,7 @@ Edit one line in the structure
 - same structure -> same output signature  
 - incomplete structure -> no forced output  
 - conflicting structure -> no arbitrary output  
-- tool/environment change -> output unchanged  
+- equivalent rendering conditions -> reproducible output  
 
 All tests pass using only the reference implementation.
 
