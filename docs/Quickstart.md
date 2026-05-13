@@ -7,7 +7,7 @@
 Removes dependency on:  
 `editing -> timeline -> manual adjustment -> trial-and-error workflows`
 
-Yet video output remains unchanged.
+Yet admissible video output remains structurally determined.
 
 ---
 
@@ -33,7 +33,7 @@ If output remains after removing a dependency, that dependency was never fundame
 
 Use existing tools for rendering and capability.
 
-Use STRUMER to define the video.
+Use STRUMER to define admissible video structure.
 
 ---
 
@@ -137,7 +137,7 @@ STRUMER shows that a system can:
 - generate video without editing  
 - operate without timeline control  
 - operate without manual adjustment  
-- remain consistent across environments  
+- support reproducible output across equivalent environments 
 - reveal only structurally valid output  
 - remain silent when structure is incomplete  
 - produce deterministic media output  
@@ -153,7 +153,7 @@ STRUMER shows that a system can:
 
 `video_output = resolve(structure)`
 
-Video exists independently of editing.
+Video admissibility exists independently of editing.
 
 `video_output_failure iff structure is incomplete OR inconsistent`
 
@@ -230,48 +230,48 @@ Runs fully offline.
 ```
 STRUMER/
 
-├── README.md  
-├── LICENSE  
+├── README.md
+├── LICENSE
 
-├── demo/  
-│   ├── strumer_v2_3.py  
-│   ├── STRUMER_HTML_v2_3.html  
+├── demo/
+│   ├── strumer_v2_3.py
+│   └── STRUMER_HTML_v2_3.html
 
-├── demo_extension/  
-│   ├── STRUMER_video_v2_7.py  
+├── demo_extension/
+│   └── STRUMER-Deterministic_v2_1.py
 
-├── STRUMER-D/  
-│   ├── strumer_d_v2_0.py  
-│   ├── STRUMER_D_video_v1_8_5.py  
-│   ├── STRUMER_D_v2_0_overview.png  
-│   ├── STRUMER_D_v2_0_flowchart.png  
-│   ├── STRUMER_D_v2_0_mindmap.png  
-│   ├── STRUMER_D_v2_0_sequence.png  
-│   └── STRUMER_D_v2_0_polygon.png  
+├── STRUMER-D/
+│   └── Structural diagram resolution demos and outputs
 
-├── docs/  
-│   ├── FAQ.md  
-│   ├── Proof-Sketch.md  
-│   ├── STRUMER-Architecture-Notes.md  
-│   ├── STRUMER_v1.2.pdf  
-│   ├── STRUMER-Diagram.png  
-│   ├── Dependency-Elimination-Framework.png  
-│   └── Shunyaya-Structural-Stack.png  
+├── STRUMER-A/
+│   └── Structural audio resolution demos and outputs
 
-└── VERIFY/  
-    ├── VERIFY.txt  
-    └── FREEZE_DEMO_SHA256.txt  
+├── STRUMER-I/
+│   └── Structural image resolution demos and outputs
+
+├── docs/
+│   ├── FAQ.md
+│   ├── Proof-Sketch.md
+│   ├── STRUMER-Architecture-Notes.md
+│   ├── STRUMER_v1.2.pdf
+│   ├── STRUMER-Diagram.png
+│   ├── Dependency-Elimination-Framework.png
+│   └── Shunyaya-Structural-Stack.png
+
+└── VERIFY/
+    ├── VERIFY.txt
+    └── FREEZE_DEMO_SHA256.txt
 ```
 
 ---
 
 ## 🔬 **Quick Verification Checklist**
 
-- same structure -> same video output  
+- same structure -> same deterministic output  
 - same structure -> same output signature  
 - incomplete structure -> no output  
 - conflicting structure -> no output  
-- environment change -> output unchanged  
+- equivalent rendering environment -> reproducible output  
 
 All checks work offline using the reference script.
 
@@ -285,10 +285,9 @@ complete AND consistent structure
 
 Not on:
 
-- editing tools  
-- timeline  
-- manual adjustment  
-- environment  
+- editing tools
+- timeline
+- manual adjustment
 
 ---
 
@@ -376,7 +375,7 @@ It does not require editing tools, timelines, or manual workflows.
 - identical structure -> identical output  
 - invalid structure -> no output  
 
-Video is a property of structure — not editing.
+Video admissibility is a property of structure — not editing.
 
 Tools enable rendering.  
 Structure determines output.
