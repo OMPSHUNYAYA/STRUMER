@@ -118,7 +118,7 @@ Traditional systems assume:
 
 STRUMER-D demonstrates:
 
-`same structure -> same diagram`  
+`same structure under equivalent rendering conditions -> same diagram`  
 `incomplete structure -> no forced output`  
 `conflicting structure -> no arbitrary output`  
 
@@ -205,12 +205,6 @@ Both follow the same invariant:
 - Basic structural layouts  
 - Deterministic output validation  
 - No advanced styling or animation  
-
----
-
-## 🎬 **Video Demonstration (Structure → Video)**
-
-Updated demonstration video coming soon.
 
 ---
 
