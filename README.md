@@ -39,7 +39,9 @@ It depends only on structure.
 
 🎬 STRUMER Demonstration Video
 
-Updated demonstration video coming soon.
+Deterministic cinematic demonstration of Structural Media Resolution:
+
+https://www.youtube.com/watch?v=sikVPrWj-QY
 
 (Video generated from deterministic structure resolution — without manual timeline editing or frame-by-frame adjustment.)
 
@@ -72,7 +74,7 @@ A complete deterministic video can be generated from structure without manual ed
 STRUMER proves that media output is determined by structural definition — not by editing tools, timelines, or manual workflows.
 
 Editing may assist creation.  
-**Structure alone determines the output.**
+**Structure determines admissible output.**
 
 ---
 
@@ -107,7 +109,7 @@ No setup beyond Python 3.9+ and the listed dependencies.
 
 STRUMER treats media as a reproducible structural artifact.
 
-`same structure -> same video`
+`same structure -> same deterministic video`
 
 This enables:
 
@@ -173,7 +175,7 @@ STRUMER demonstrates:
 
 When structure resolves, video becomes visible — deterministically.
 
-`same structure -> same video`  
+`same structure -> same deterministic video`  
 `incomplete structure -> no forced output`  
 `conflicting structure -> no arbitrary output`
 
@@ -205,9 +207,9 @@ m = final video output
 a = layout alignment  
 s = structural definition  
 
-No approximation.  
-No manual tuning.  
-`Same structure -> same video.`
+No manual tuning required for deterministic replay.
+
+`same structure -> same deterministic video.`
 
 ---
 
@@ -237,7 +239,7 @@ What STRUMER demonstrates:
 
 Video output does not require editing tools as a prerequisite  
 Tools may assist visualization or execution  
-**Structure alone determines the output**
+**Structure determines admissible output**
 
 ---
 
@@ -338,13 +340,13 @@ It is not the source of output.
 
 If editing is required, this must fail:
 
-`same structure -> same video`
+`same structure -> same deterministic video`
 
 Or demonstrate:
 
 incomplete structure -> forced output  
 conflicting structure -> arbitrary output  
-tool change -> different output  
+non-equivalent rendering environment -> different output 
 
 If none occur, editing is not fundamental.
 
@@ -372,8 +374,7 @@ remove editing → structure remains → video preserved
 `video != editing`  
 `video = resolve(structure)`
 
-You don’t edit videos.  
-**You define them.**
+You define admissible video structure.
 
 ---
 
@@ -402,7 +403,7 @@ domain-specific structural templates
 
 Invariant remains:
 
-`same structure -> same video`
+`same structure -> same deterministic video`
 
 ---
 
@@ -465,6 +466,7 @@ it reveals that output was always determined by structure.
 ### 🎬 STRUMER (Video Without Editing)
 - [Python Reference](demo/strumer_v2_3.py)  
 - [HTML Visual Demo](demo/STRUMER_HTML_v2_3.html)  
+- [Deterministic Cinematic Script](demo_extension/STRUMER-Deterministic_v2_1.py)
 
 ### 🧩 STRUMER-D (Diagrams Without Drawing)
 - [STRUMER-D Diagram Script (v2.0)](STRUMER-D/strumer_d_v2_0.py)  
@@ -577,7 +579,7 @@ STRUMER never forces output.
 
 ## 🔥 **Deterministic Invariant**
 
-`same structure -> same video`
+`same structure -> same deterministic video`
 
 `same structure -> same video -> same output signature`
 
@@ -659,7 +661,7 @@ Everything beyond this is future expansion.
 
 We welcome extensions that expand capability without breaking the core invariants:
 
-`same structure -> same video`  
+`same structure -> same deterministic video`  
 `incomplete -> ABSTAIN`  
 `conflict -> BLOCKED`
 
