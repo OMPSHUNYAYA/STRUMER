@@ -2,11 +2,11 @@
 
 ## **Structural Image Resolution — Images Without Manual Construction**
 
-**Reveals complete images from structure — without manual drawing, editing, or layout construction.**
+**Reveals deterministic image outputs from structure — without manual drawing workflows, editing pipelines, or layout construction when structure is sufficient.**
 
 This reference engine demonstrates a strict invariant:
 
-**image generation does not depend on drawing workflows, manual composition, or visual adjustment cycles.**
+**deterministic image generation does not fundamentally require manual drawing workflows, composition pipelines, or visual adjustment cycles when structure is sufficient.**
 
 It depends only on structure.
 
@@ -18,19 +18,19 @@ It depends only on structure.
 
 **Where Structure Resolves and Image Becomes Visible**
 
-STRUMER-I removes manual construction as a dependency for image generation.
+STRUMER-I reduces reliance on manual image construction workflows through structure-defined generation.
 
-An image does not need drawing workflows, manual editing, visual tuning, or composition pipelines to exist.
+A deterministic image output does not fundamentally require manual drawing, composition pipelines, or visual tuning when structure is sufficient.
 
 The image becomes visible only when structure resolves.
 
-**Deterministic • Structure-Based • No Manual Construction • No Layout Tuning • No Arbitrary Rendering**
+**Deterministic • Structure-Defined • Replay-Verifiable • Workflow-Reduced**
 
 ---
 
 ## ⚡ **The Claim**
 
-A complete image can be generated without manual construction — when structure is sufficient.
+A deterministic image output can be reproducibly generated from structure without manual construction workflows — when structure is sufficient.
 
 ---
 
@@ -38,10 +38,10 @@ A complete image can be generated without manual construction — when structure
 
 `image_visible iff image_structure_complete AND image_structure_consistent`
 
-STRUMER-I proves that image output is determined by structure — not by manual rendering workflows or visual adjustment cycles.
+STRUMER-I demonstrates that admissible image output is structurally determined rather than dependent on manual rendering workflows or visual adjustment cycles.
 
 Rendering may assist visibility.  
-**Structure alone determines the output.**
+**Structure determines admissible output.**
 
 ---
 
@@ -58,7 +58,7 @@ python strumer_i_v1_1.py
 **What you will observe:**
 
 • Complete structure → Image generated (RESOLVED)  
-• Same structure → Identical image every time  
+• Same structure → Deterministic image replay
 • Changed structure → Visibly changed image  
 • Incomplete structure → Visibility blocked (INCOMPLETE)  
 • Conflicting structure → No arbitrary visibility (CONFLICT)
@@ -67,7 +67,7 @@ This is the entire thesis in action.
 
 If the same structure consistently produces the same image, manual construction is no longer the source of correctness.
 
-**Structure reveals the image. Rendering only makes it visible.**
+**Structure determines the admissible image. Rendering makes the visible realization possible.**
 
 ---
 
@@ -122,14 +122,14 @@ Traditional systems assume:
 
 STRUMER-I demonstrates:
 
-`same structure -> same image`  
+`same structure -> deterministic image replay`  
 `same structure -> same certificate`  
 `changed structure -> changed image`  
 `incomplete structure -> no forced output`  
 `conflicting structure -> no arbitrary output`  
 
 **This is not a better rendering workflow.  
-This is the removal of manual construction as a requirement for image visibility.**
+This demonstrates that deterministic structured image generation does not fundamentally require manual construction workflows when structure is sufficient.**
 
 ---
 
@@ -177,7 +177,7 @@ This folder contains the complete STRUMER-I v1.1 structural proof package.
 
 - `STRUMER_I_v1_1_repeat.png`  
   Deterministic replay proof.  
-  Same structure -> same image -> same certificate.
+  same structure -> deterministic image replay -> same certificate.
 
 - `STRUMER_I_v1_1_changed.png`  
   Structurally modified object field demonstrating deterministic visible mutation.
@@ -212,13 +212,13 @@ This folder contains the complete STRUMER-I v1.1 structural proof package.
 
 All outputs in this folder are generated deterministically from structure.
 
-`same structure -> same image -> same certificate`
+`Same structure -> deterministic image replay -> same certificate.`
 
 ---
 
 ## 🔐 **Core Guarantee**
 
-`same structure -> same image -> same certificate`
+`same structure -> deterministic image replay -> same certificate`
 
 ---
 
@@ -226,7 +226,7 @@ All outputs in this folder are generated deterministically from structure.
 
 STRUMER-I treats images as reproducible structural artifacts.
 
-`same structure -> same image`
+`same structure -> deterministic image replay`
 
 This enables:
 
@@ -328,7 +328,7 @@ STRUMER-I operates within the broader STRUMER ecosystem:
 **What this demonstrates:**
 
 • The same structural principles can generate multiple output domains  
-• No manual workflows are required for admissible visibility  
+• Deterministic admissible visibility does not fundamentally require manual construction workflows when structure is sufficient  
 • Structure defines objects, relations, identity, and output consistency  
 
 This extends the same structural principle across media domains:
@@ -351,7 +351,7 @@ The broader STRUMER ecosystem demonstrates how the same deterministic structural
 
 This folder also includes the deterministic cinematic script used to generate the published STRUMER-I structural explanation video.
 
-`same structure -> same image -> same structural explanation`
+`same structure -> deterministic image replay -> same structural explanation`
 
 The video exists as a public visual explanation of the structural image proof demonstrated in this folder.
 
@@ -380,7 +380,7 @@ All under the same invariant:
 Manual construction did not determine the image.  
 Rendering made visibility possible. Structure determined the output.
 
-The image is not manually assembled — it is revealed by structure.
+The image becomes visible through structural definition and deterministic resolution.
 
 When structure is complete and consistent:  
 image becomes visible.
