@@ -177,7 +177,7 @@ This folder contains the complete STRUMER-I v1.1 structural proof package.
 
 - `STRUMER_I_v1_1_repeat.png`  
   Deterministic replay proof.  
-  same structure -> deterministic image replay -> same certificate.
+  same structure under equivalent rendering conditions -> deterministic image replay -> same certificate.
 
 - `STRUMER_I_v1_1_changed.png`  
   Structurally modified object field demonstrating deterministic visible mutation.
