@@ -32,7 +32,7 @@ It enables systems to:
 
 ### **Implication**
 
-Video output does not depend on:
+Admissible video output semantics do not depend on:
 
 - video editors  
 - timeline systems  
@@ -40,10 +40,10 @@ Video output does not depend on:
 - preview-fix workflows  
 - rendering environments  
 
-Video output depends only on:
+Admissible video output depends only on:
 
-- structural completeness  
-- structural consistency  
+- structural completeness
+- structural consistency
 
 ---
 
@@ -274,11 +274,11 @@ Output identity is determined solely by structure.
 
 `S1 = S2 -> Output1 = Output2`
 
-Output is independent of:
+Output semantics are independent of:
 
-- editing tools  
-- environment  
-- execution pathway  
+- editing workflows
+- manual adjustment
+- execution pathway 
 
 ---
 
@@ -286,7 +286,7 @@ Output is independent of:
 
 ### **7.1 Dependency Independence**
 
-Output is independent of:
+Output semantics are independent of rendering environment:
 
 - editing ON/OFF  
 - timeline presence  
