@@ -192,9 +192,9 @@ Each artifact is generated deterministically from structure.
 
 `same structure -> same waveform -> same audio -> same output signature`
 
-This creates deterministic replayability across environments, machines, and executions.
+This creates deterministic replayability under equivalent execution and rendering conditions.
 
-The output is structurally reproducible.
+The output is structurally reproducible under equivalent execution conditions.
 
 ---
 
