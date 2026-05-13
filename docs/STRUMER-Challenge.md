@@ -25,9 +25,9 @@ and:
 
 Across all cases:
 
-`same structure -> same video output`
+`same structure -> same deterministic video output`
 
-STRUMER shows that video does not require editing as a prerequisite.
+STRUMER shows that admissible video output does not require editing as a prerequisite.
 
 Tools may be used —  
 but they are not the source of output.
@@ -42,10 +42,10 @@ Run this single command:
 
 Then attempt to break any of these invariants:
 
-- same structure -> different video output  
+- same structure -> different deterministic video output
 - incomplete structure -> forced output  
 - conflicting structure -> arbitrary output  
-- tool or environment change -> different output  
+- non-equivalent rendering environment -> different output
 
 If you cannot break any of them, editing is not fundamental.
 
@@ -61,7 +61,7 @@ STRUMER preserves output where traditional media systems often:
 - rely on timeline manipulation  
 - require manual positioning and adjustment  
 - depend on preview-fix cycles  
-- vary output across environments  
+- may vary output across environments
 
 STRUMER is not an optimization of editing.
 
@@ -168,9 +168,9 @@ Run the same structure multiple times.
 
 ### **Insight**
 
-`same structure -> same video output`
+`same structure -> same deterministic video output`
 
-Output is independent of execution context.
+Output reproducibility is preserved under equivalent rendering conditions.
 
 ---
 
@@ -186,7 +186,7 @@ Run the same structure across different environments.
 
 ### **STRUMER**
 
-- Same structure -> same video output  
+- Same structure -> same deterministic video output
 
 ### **Insight**
 
@@ -227,7 +227,7 @@ Remove editing workflow entirely.
 ### **STRUMER**
 
 - No workflow required  
-- Structure alone produces output  
+- Structure determines admissible output
 
 ### **Insight**
 
@@ -259,13 +259,13 @@ Rendering conditions change (performance, environment, libraries).
 
 Across all cases:
 
-`same structure -> same video output`
+`same structure -> same deterministic video output`
 
 This holds:
 
-- across runs  
-- across environments  
-- across tools  
+- across runs
+- across equivalent rendering environments
+- across equivalent tool conditions
 
 This is the signature of structural media resolution.
 
@@ -287,7 +287,7 @@ STRUMER:
 - remains invariant under tool conditions  
 - never forces output  
 
-Video is a property of structure.  
+Video admissibility is a property of structure.
 Editing is a method of realization.
 
 ---
@@ -296,7 +296,7 @@ Editing is a method of realization.
 
 Try to demonstrate any of the following:
 
-- same structure -> different video output  
+- same structure -> different deterministic video output
 - incomplete structure -> forced output  
 - conflicting structure -> arbitrary output  
 - tool/environment change -> different output  
@@ -338,7 +338,7 @@ Introduce conflicting timing or layout → BLOCKED (no video)
 ## 🏁 **Final Line**
 
 STRUMER does not outperform editing by being faster.  
-It outperforms by not depending on it.
+It demonstrates that admissible output does not fundamentally depend on it.
 
 Video is not produced by editing.  
 It is revealed from structure.
@@ -346,7 +346,7 @@ It is revealed from structure.
 When structure is complete and consistent, video becomes visible —  
 deterministically, reproducibly, and independently of editing.
 
-Tools enable rendering.  
-Structure determines output.
+Tools enable rendering.
+Structure determines admissible output.
 
 **This is STRUMER.**
